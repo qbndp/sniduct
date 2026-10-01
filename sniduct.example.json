@@ -1,0 +1,21 @@
+{
+  "listen": {
+    "host": "auto",
+    "port": 8088,
+    "port_auto": false,
+    "fallback_auto": true
+  },
+  "upstream": {
+    "host": "auto",
+    "port": "auto",
+    "probe_ports": []
+  },
+  "adb": "adb",
+  "device": "",
+  "target_apps": [
+    "*"
+  ],
+  "skip_snis": [],
+  "block_quic": true,
+  "version": 3
+}

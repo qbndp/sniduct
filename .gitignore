@@ -1,0 +1,28 @@
+# Python 产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+wheels/
+
+# 虚拟环境 / 缓存
+.venv/
+.venv*/
+.uvcache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# 本机运行期配置（含设备序列号等本机信息，不入库）
+sniduct.json
+
+# 本地备份
+backups/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,33 @@
+[project]
+name = "sniduct"
+version = "0.3.0"
+description = "Android 透明代理转发器：iptables DNAT + TLS SNI 提取 + HTTP CONNECT 隧道到任意抓包代理"
+readme = "README.md"
+authors = [
+    { name = "sage", email = "2374978999@qq.com" }
+]
+requires-python = ">=3.10"
+keywords = ["android", "mitm", "sni", "iptables", "dnat", "proxy", "adb", "capture"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+    "Topic :: System :: Networking :: Monitoring",
+]
+dependencies = [
+    "rich>=13.9",
+]
+
+[project.scripts]
+sniduct = "sniduct:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = "src"
+
+[dependency-groups]
+dev = ["pytest>=8"]
